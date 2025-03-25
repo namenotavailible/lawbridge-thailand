@@ -1,4 +1,3 @@
-
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import PageTransition from "@/components/layout/PageTransition";
@@ -25,7 +24,6 @@ import {
 } from "lucide-react";
 
 const Index = () => {
-  // Reset scroll position when the page loads
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -55,7 +53,7 @@ const Index = () => {
               
               <div className="flex flex-col sm:flex-row items-center justify-center gap-4 animate-slide-down animation-delay-200">
                 <Link
-                  to="/individuals"
+                  to="/get-started"
                   className="w-full sm:w-auto flex items-center justify-center gap-2 px-6 py-3 text-white bg-primary rounded-lg shadow-sm hover:bg-primary/90 transition-colors"
                 >
                   <span>Get Started</span>
@@ -232,18 +230,10 @@ const Index = () => {
               
               <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
                 <Link
-                  to="/individuals"
+                  to="/get-started"
                   className="w-full sm:w-auto flex items-center justify-center gap-2 px-6 py-3 text-white bg-primary rounded-lg shadow-sm hover:bg-primary/90 transition-colors"
                 >
-                  <span>For Individuals</span>
-                  <ArrowRight size={16} />
-                </Link>
-                
-                <Link
-                  to="/businesses"
-                  className="w-full sm:w-auto flex items-center justify-center gap-2 px-6 py-3 text-primary bg-white border border-primary/20 rounded-lg shadow-sm hover:bg-primary/5 transition-colors"
-                >
-                  <span>For Businesses</span>
+                  <span>Get Started</span>
                   <ArrowRight size={16} />
                 </Link>
               </div>

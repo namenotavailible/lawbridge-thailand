@@ -11,6 +11,7 @@ import { useLocation } from "react-router-dom";
 import Index from "./pages/Index";
 import About from "./pages/About";
 import NotFound from "./pages/NotFound";
+import ChoosePath from "./pages/ChoosePath";
 import IndividualsIndex from "./pages/individuals/Index";
 import BusinessesIndex from "./pages/businesses/Index";
 import ResourcesIndex from "./pages/resources/Index";
@@ -27,6 +28,7 @@ const AnimatedRoutes = () => {
       <Routes location={location} key={location.pathname}>
         <Route path="/" element={<Index />} />
         <Route path="/about" element={<About />} />
+        <Route path="/get-started" element={<ChoosePath />} />
         <Route path="/individuals" element={<IndividualsIndex />} />
         <Route path="/businesses" element={<BusinessesIndex />} />
         <Route path="/resources" element={<ResourcesIndex />} />

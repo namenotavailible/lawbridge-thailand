@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { cn } from "@/lib/utils";
@@ -32,7 +31,6 @@ const Navbar = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  // Close mobile menu when changing routes
   useEffect(() => {
     setIsOpen(false);
   }, [location.pathname]);
@@ -47,7 +45,6 @@ const Navbar = () => {
       )}
     >
       <div className="container mx-auto px-4 flex items-center justify-between">
-        {/* Logo */}
         <Link 
           to="/" 
           className="text-2xl font-display font-medium flex items-center"
@@ -58,7 +55,6 @@ const Navbar = () => {
           <span className="ml-1 text-foreground">Thailand</span>
         </Link>
 
-        {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center space-x-2" aria-label="Main navigation">
           <ul className="flex items-center space-x-1">
             {navItems.map((item) => (
@@ -103,15 +99,13 @@ const Navbar = () => {
           </ul>
         </nav>
 
-        {/* Get Started Button */}
         <Link 
-          to="/individuals"
+          to="/get-started"
           className="hidden md:inline-flex items-center justify-center rounded-lg bg-primary px-4 py-2 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary"
         >
           Get Started
         </Link>
 
-        {/* Mobile menu button */}
         <button
           onClick={() => setIsOpen(!isOpen)}
           className="md:hidden rounded-lg p-2 text-foreground hover:bg-secondary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary"
@@ -122,7 +116,6 @@ const Navbar = () => {
         </button>
       </div>
 
-      {/* Mobile Navigation */}
       <div
         className={cn(
           "fixed inset-0 z-40 bg-white transform transition-transform duration-300 ease-in-out md:hidden",
@@ -185,7 +178,7 @@ const Navbar = () => {
 
           <div className="mt-auto pt-8">
             <Link
-              to="/individuals"
+              to="/get-started"
               className="block w-full rounded-lg bg-primary py-3 text-center font-medium text-primary-foreground shadow hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary"
             >
               Get Started
