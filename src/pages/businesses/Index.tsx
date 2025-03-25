@@ -1,4 +1,3 @@
-
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import PageTransition from "@/components/layout/PageTransition";
@@ -13,7 +12,7 @@ import {
   GlobeLock, 
   Users, 
   Receipt, 
-  FileContract,
+  File,
   Building2,
   FileCheck,
   ShieldAlert,
@@ -21,7 +20,6 @@ import {
 } from "lucide-react";
 
 const BusinessesIndex = () => {
-  // Reset scroll position when the page loads
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -31,7 +29,6 @@ const BusinessesIndex = () => {
       <Navbar />
       
       <main className="flex-1">
-        {/* Hero Section */}
         <section className="pt-32 pb-16 md:pt-36 md:pb-20 bg-gradient-to-b from-legal-business/10 to-transparent">
           <div className="container px-4">
             <div className="max-w-3xl mx-auto text-center">
@@ -50,7 +47,6 @@ const BusinessesIndex = () => {
           </div>
         </section>
         
-        {/* Main Categories Section */}
         <section className="py-16">
           <div className="container px-4">
             <SectionHeading
@@ -94,7 +90,7 @@ const BusinessesIndex = () => {
               <LegalCategoryCard
                 title="Contracts & Agreements"
                 description="Essential elements for enforceable contracts, standard terms, and dispute resolution mechanisms."
-                icon={FileContract}
+                icon={File}
                 href="/businesses/contracts"
                 colorClass="text-legal-business"
               />
@@ -110,7 +106,6 @@ const BusinessesIndex = () => {
           </div>
         </section>
         
-        {/* Common Scenarios Section */}
         <section className="py-16 bg-secondary/30">
           <div className="container px-4">
             <SectionHeading
@@ -164,7 +159,6 @@ const BusinessesIndex = () => {
           </div>
         </section>
         
-        {/* Tools Section */}
         <section className="py-16">
           <div className="container px-4">
             <div className="rounded-2xl bg-gradient-to-br from-legal-business/10 to-white p-8 sm:p-12 border border-legal-business/10">
@@ -213,7 +207,7 @@ const BusinessesIndex = () => {
                     className="flex items-center p-4 bg-white rounded-lg border border-border hover:border-legal-business/30 transition-colors group"
                   >
                     <div className="mr-4 p-3 bg-legal-business/10 text-legal-business rounded-md">
-                      <FileContract size={20} />
+                      <File size={20} />
                     </div>
                     <div>
                       <h3 className="font-medium">Contract Templates</h3>
@@ -241,7 +235,6 @@ const BusinessesIndex = () => {
           </div>
         </section>
         
-        {/* CTA Section */}
         <section className="py-16 bg-gradient-to-b from-white to-secondary/30">
           <div className="container px-4">
             <div className="max-w-3xl mx-auto text-center">

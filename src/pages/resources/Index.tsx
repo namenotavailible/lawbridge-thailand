@@ -14,7 +14,7 @@ import {
   Newspaper, 
   MessageSquareText,
   BarChart,
-  Translate,
+  Globe,
   Search
 } from "lucide-react";
 
@@ -146,7 +146,7 @@ const ResourcesIndex = () => {
               <div className="bg-white rounded-xl shadow-sm border border-border overflow-hidden">
                 <div className="h-48 bg-gradient-to-r from-primary/20 to-legal-resources/20 flex items-center justify-center">
                   <div className="p-4 rounded-full bg-white/50 backdrop-blur-sm">
-                    <Translate size={40} className="text-legal-resources" />
+                    <Globe size={40} className="text-legal-resources" />
                   </div>
                 </div>
                 
