@@ -2,7 +2,7 @@
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { cn } from "@/lib/utils";
-import { Menu, X, ChevronDown, Users, Building2, Tool, BookOpen } from "lucide-react";
+import { Menu, X, ChevronDown, Users, Building2, Wrench, BookOpen } from "lucide-react";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -12,7 +12,7 @@ const Navbar = () => {
   const navItems = [
     { name: "Individuals", path: "/individuals", icon: Users },
     { name: "Businesses", path: "/businesses", icon: Building2 },
-    { name: "Tools", path: "/tools", icon: Tool, submenu: [
+    { name: "Tools", path: "/tools", icon: Wrench, submenu: [
       { name: "Scenario Simulator", path: "/tools/scenario-simulator" },
       { name: "Legal Risk Checker", path: "/tools/risk-checker" },
     ]},
