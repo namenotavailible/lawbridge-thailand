@@ -9,6 +9,7 @@ import { useLocation } from "react-router-dom";
 
 // Pages
 import Index from "./pages/Index";
+import About from "./pages/About";
 import NotFound from "./pages/NotFound";
 import IndividualsIndex from "./pages/individuals/Index";
 import BusinessesIndex from "./pages/businesses/Index";
@@ -25,6 +26,7 @@ const AnimatedRoutes = () => {
     <AnimatePresence mode="wait">
       <Routes location={location} key={location.pathname}>
         <Route path="/" element={<Index />} />
+        <Route path="/about" element={<About />} />
         <Route path="/individuals" element={<IndividualsIndex />} />
         <Route path="/businesses" element={<BusinessesIndex />} />
         <Route path="/resources" element={<ResourcesIndex />} />
