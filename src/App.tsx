@@ -17,6 +17,7 @@ import BusinessesIndex from "./pages/businesses/Index";
 import ResourcesIndex from "./pages/resources/Index";
 import ScenarioSimulator from "./pages/tools/ScenarioSimulator";
 import BlogIndex from "./pages/blog/Index";
+import LegalDisclaimer from "./pages/LegalDisclaimer";
 
 const queryClient = new QueryClient();
 
@@ -35,6 +36,7 @@ const AnimatedRoutes = () => {
         <Route path="/resources" element={<ResourcesIndex />} />
         <Route path="/tools/scenario-simulator" element={<ScenarioSimulator />} />
         <Route path="/blog" element={<BlogIndex />} />
+        <Route path="/legal-disclaimer" element={<LegalDisclaimer />} />
         {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
         <Route path="*" element={<NotFound />} />
       </Routes>
