@@ -1,7 +1,8 @@
+
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { cn } from "@/lib/utils";
-import { Menu, X, ChevronDown, Users, Building2, Wrench, BookOpen } from "lucide-react";
+import { Menu, X, ChevronDown, Users, Building2, Wrench, BookOpen, FileText } from "lucide-react";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -16,6 +17,7 @@ const Navbar = () => {
       { name: "Legal Risk Checker", path: "/tools/risk-checker" },
     ]},
     { name: "Resources", path: "/resources", icon: BookOpen },
+    { name: "Blog", path: "/blog", icon: FileText },
   ];
 
   useEffect(() => {
