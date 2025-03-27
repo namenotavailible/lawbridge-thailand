@@ -1,5 +1,6 @@
 
 import { useEffect } from "react";
+import { Link } from "react-router-dom";
 import PageTransition from "@/components/layout/PageTransition";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
@@ -100,8 +101,8 @@ const BlogIndex = () => {
                       {post.excerpt}
                     </p>
                     
-                    <a 
-                      href="#" 
+                    <Link 
+                      to={`/blog/${post.id}`}
                       className="mt-auto text-primary font-medium hover:underline inline-flex items-center"
                     >
                       Read more
@@ -119,7 +120,7 @@ const BlogIndex = () => {
                           d="M14 5l7 7m0 0l-7 7m7-7H3" 
                         />
                       </svg>
-                    </a>
+                    </Link>
                   </div>
                 </article>
               ))}
