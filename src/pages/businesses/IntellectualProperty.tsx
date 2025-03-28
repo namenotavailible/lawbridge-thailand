@@ -1,11 +1,10 @@
-
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import PageTransition from "@/components/layout/PageTransition";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import SectionHeading from "@/components/ui/SectionHeading";
-import { ArrowLeft, ShieldAlert, FileText, CheckCircle, HelpCircle, Lightbulb, BookText, Trademark, AlertTriangle } from "lucide-react";
+import { ArrowLeft, ShieldAlert, FileText, CheckCircle, HelpCircle, Lightbulb, BookText, Copyright, AlertTriangle } from "lucide-react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
@@ -111,7 +110,7 @@ const IntellectualProperty = () => {
                   <Card>
                     <CardHeader>
                       <CardTitle className="flex items-center">
-                        <Trademark size={20} className="mr-2 text-legal-business" />
+                        <Copyright size={20} className="mr-2 text-legal-business" />
                         Trademark Registration Process
                       </CardTitle>
                       <CardDescription>Step-by-step guide to registering a trademark in Thailand</CardDescription>
