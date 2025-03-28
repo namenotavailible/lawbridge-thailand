@@ -1,11 +1,10 @@
-
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import PageTransition from "@/components/layout/PageTransition";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import SectionHeading from "@/components/ui/SectionHeading";
-import { ArrowLeft, ShieldAlert, Gavel, Prison, Scale, Search, AlertTriangle } from "lucide-react";
+import { ArrowLeft, ShieldAlert, Gavel, Building2, Scale, Search, AlertTriangle } from "lucide-react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 
@@ -156,7 +155,7 @@ const CriminalLaw = () => {
               <Card>
                 <CardHeader>
                   <CardTitle className="flex items-center">
-                    <Prison size={20} className="mr-2 text-legal-criminal" />
+                    <Building2 size={20} className="mr-2 text-legal-criminal" />
                     Penalties & Sentencing
                   </CardTitle>
                   <CardDescription>Consequences of criminal conviction</CardDescription>

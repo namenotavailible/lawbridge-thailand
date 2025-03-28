@@ -1,11 +1,10 @@
-
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import PageTransition from "@/components/layout/PageTransition";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import SectionHeading from "@/components/ui/SectionHeading";
-import { ArrowLeft, Plane, Passport, Briefcase, UserCheck, Clock, AlertCircle } from "lucide-react";
+import { ArrowLeft, Plane, FileCheck, Briefcase, UserCheck, Clock, AlertCircle } from "lucide-react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 
@@ -80,7 +79,7 @@ const VisaImmigration = () => {
               <Card>
                 <CardHeader>
                   <CardTitle className="flex items-center">
-                    <Passport size={20} className="mr-2 text-legal-individual" />
+                    <FileCheck size={20} className="mr-2 text-legal-individual" />
                     Tourist Visas
                   </CardTitle>
                   <CardDescription>Options for visitors and travelers</CardDescription>
