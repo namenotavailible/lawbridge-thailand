@@ -28,6 +28,14 @@ import ConsumerProtection from "./pages/individuals/ConsumerProtection";
 import VisaImmigration from "./pages/individuals/VisaImmigration";
 import PropertyHousing from "./pages/individuals/PropertyHousing";
 
+// Business topic pages
+import StartingBusiness from "./pages/businesses/StartingBusiness";
+import ForeignBusinessAct from "./pages/businesses/ForeignBusinessAct";
+import LaborLaw from "./pages/businesses/LaborLaw";
+import TaxesVat from "./pages/businesses/TaxesVat";
+import Contracts from "./pages/businesses/Contracts";
+import IntellectualProperty from "./pages/businesses/IntellectualProperty";
+
 const queryClient = new QueryClient();
 
 // AnimatedRoutes component to handle page transitions
@@ -55,6 +63,14 @@ const AnimatedRoutes = () => {
         <Route path="/individuals/consumer-protection" element={<ConsumerProtection />} />
         <Route path="/individuals/visa-immigration" element={<VisaImmigration />} />
         <Route path="/individuals/property-housing" element={<PropertyHousing />} />
+        
+        {/* Business topic pages */}
+        <Route path="/businesses/starting-business" element={<StartingBusiness />} />
+        <Route path="/businesses/foreign-business-act" element={<ForeignBusinessAct />} />
+        <Route path="/businesses/labor-law" element={<LaborLaw />} />
+        <Route path="/businesses/taxes-vat" element={<TaxesVat />} />
+        <Route path="/businesses/contracts" element={<Contracts />} />
+        <Route path="/businesses/intellectual-property" element={<IntellectualProperty />} />
         
         {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
         <Route path="*" element={<NotFound />} />
