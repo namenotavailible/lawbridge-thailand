@@ -20,6 +20,14 @@ import BlogIndex from "./pages/blog/Index";
 import BlogPost from "./pages/blog/BlogPost";
 import LegalDisclaimer from "./pages/LegalDisclaimer";
 
+// Individual topic pages
+import MarriageDivorce from "./pages/individuals/MarriageDivorce";
+import InheritanceWills from "./pages/individuals/InheritanceWills";
+import CriminalLaw from "./pages/individuals/CriminalLaw";
+import ConsumerProtection from "./pages/individuals/ConsumerProtection";
+import VisaImmigration from "./pages/individuals/VisaImmigration";
+import PropertyHousing from "./pages/individuals/PropertyHousing";
+
 const queryClient = new QueryClient();
 
 // AnimatedRoutes component to handle page transitions
@@ -39,6 +47,15 @@ const AnimatedRoutes = () => {
         <Route path="/blog" element={<BlogIndex />} />
         <Route path="/blog/:id" element={<BlogPost />} />
         <Route path="/legal-disclaimer" element={<LegalDisclaimer />} />
+        
+        {/* Individual topic pages */}
+        <Route path="/individuals/marriage-divorce" element={<MarriageDivorce />} />
+        <Route path="/individuals/inheritance-wills" element={<InheritanceWills />} />
+        <Route path="/individuals/criminal-law" element={<CriminalLaw />} />
+        <Route path="/individuals/consumer-protection" element={<ConsumerProtection />} />
+        <Route path="/individuals/visa-immigration" element={<VisaImmigration />} />
+        <Route path="/individuals/property-housing" element={<PropertyHousing />} />
+        
         {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
         <Route path="*" element={<NotFound />} />
       </Routes>
