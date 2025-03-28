@@ -1,3 +1,4 @@
+
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import PageTransition from "@/components/layout/PageTransition";
@@ -191,7 +192,7 @@ const IntellectualProperty = () => {
               </div>
               
               <div className="lg:col-span-1">
-                <div className="bg-secondary/30 rounded-xl p-6 mb-8 sticky top-24">
+                <div className="bg-secondary/30 rounded-xl p-6 mb-8 lg:sticky lg:top-24 max-h-[calc(100vh-120px)] overflow-y-auto">
                   <h3 className="text-xl font-medium mb-4">Quick Navigation</h3>
                   <ul className="space-y-2">
                     <li>
