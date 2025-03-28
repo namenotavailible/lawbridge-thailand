@@ -164,7 +164,7 @@ const PropertyHousing = () => {
                 <CardContent>
                   <ul className="space-y-2 text-muted-foreground">
                     <li>• Transfer fees (2% of registered value)</li>
-                    <li>• Specific Business Tax (3.3% if held <3 years)</li>
+                    <li>• Specific Business Tax (3.3% if held &lt;3 years)</li>
                     <li>• Stamp duty (0.5% if exempt from SBT)</li>
                     <li>• Withholding tax on rental income</li>
                     <li>• Annual land and building tax rates</li>
